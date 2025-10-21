@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Product Gallery</title>
+    <!--links to css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--links to js-->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!--header & navigation-->
+    <header>
+      <nav>
+        <!--make the index, contact, about as #/id-->
+        <a href="#index">⏏Home</a>
+        <a href="product.html">&#128499;Products</a>     <!--product-->
+        <a href="#contact">☎Contact Us</a>
+        <a href="#about">&#x1F5B4;About</a>
+      </nav>
+    </header>
+    <hr />
+
+    <!--Hero-->
+    <section class="heroo">
+      <h2><b><i>WELCOME TO MY PAGE</i></b></h2>
+      <p><i><b>Tara Foods</b></i></p>
+    </section>
+
+    <!--Create div contain as a container-->
+     <div contain>
+        <!--div for index / home-->
+    <div id="home">
+    </div>
+    <hr>
+
+    <!--div for contact / contact us-->
+    <div id="contact">
+    </div>
+    <hr>
+
+    <!--div for about / about us-->
+    <div id="about">
+    </div>
+    <hr>
+
+    <!--Products Gallery & details -->
+    <h1>Products</h1>
+    <!--Div for the whole products-->
+    <div class="main">
+    <div class="products">
+        <!--Row for the drinks-->
+        <h3>DRINKS</h3>
+        <div class="row1">
+            <!--div for each drinks-->
+            
+            <!--Agar-Agar-->
+            <div class="card">
+                <h4>AgarAgar</h4>
+                <img src="img/agar-agar.webp">
+                <p> Also Known as gulaman, it is a plant-based gelatin<br>
+                    derived from red algae. Commonly use in deserts and beverages</p>
+                <p>10ml <br>
+                ₱10</p>
+                <button onclick="addToCart('AgarAgar', 10)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('AgarAgar')">Remove</button> <!--Button for remove to cart-->
+            </div>
+            <!--Boku Juice-->
+            <div class="card">
+                <h4>Boku Juice</h4>
+                <img src="img/boku-juice.jpg">
+                <p>Also known as Coconut water, a refreshing drinks made<br>
+                    from the juice of young coconuts.</p>
+                <p>10ml <br>
+                ₱10</p>
+                <button onclick="addToCart('Boku Juice', 10)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('Boku Juice')">Remove</button> <!--Button for remove to cart-->
+            </div>
+            <!--Milo-->
+            <div class="card">
+                <h4>Milo</h4>
+                <img src="img/milo.webp">
+                <p>A loved filipino drink that combines natural goodness<br>
+                    of milk, cocoa, vitamins, & etc.</p>
+                <p>10ml <br>
+                ₱15</p>
+                <button onclick="addToCart('Milo', 15)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('Milo')">Remove</button> <!--Button for remove to cart-->
+            </div>
+            <!--Mogu-Mogu-->
+            <div class="card">
+                <h4>Mogu-Mogu</h4>
+                <img src="img/mogumogu.webp">
+                <p>Popular fruit-flavored drink. Combination of fruit juice & nata de coco</p>
+                <p>30ml <br>
+                ₱30</p>
+                <button onclick="addToCart('Mogu-Mogu', 30)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('Mogu-Mogu')">Remove</button> <!--Button for remove to cart-->
+            </div>
+        </div>
+        <!--Row for the Snacks-->
+        <h3>SNACKS</h3>
+        <!--Div for the Row of Snacks-->
+        <div class="row2">
+            <!--Kutsinta-->
+            <div class="card">
+                <h4>Kutsinta</h4>
+                <img src="img/puto.jpg">
+                <p>Delicious jelly like puto, commonly in color brown</p>
+                <p>₱10</p>
+                <button onclick="addToCart('Kutsinta', 10)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('Kutsinta')">Remove</button> <!--Button for remove to cart-->
+            </div>
+            <!--Gummies-->
+            <div class="card">
+                <h4>Gummies</h4>
+                <img src="img/gummies.jpg">
+                <p>Small, fruit gum candies, similar to jellies</p>
+                <p>₱15</p>
+                <button onclick="addToCart('Gummies', 15)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('Gummies')">Remove</button> <!--Button for remove to cart-->
+            </div>
+            <!--Lumpia-->
+            <div class="card">
+                <h4>Lumpia</h4>
+                <img src="img/lumpia.jpg">
+                <p>simple & flavourful snack rolled of mixtures of vegetables</p>
+                <p>₱7</p>
+                <button onclick="addToCart('Lumpia', 7)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('Lumpia')">Remove</button> <!--Button for remove to cart-->
+            </div>
+            <!--Shanghai-->
+            <div class="card">
+                <h4>Shanghai</h4>
+                <img src="img/shanghai.webp">
+                <p>Also known as spring rolls, consists of giniling meat with vegetables.</p>
+                <p>₱7</p>
+                <button onclick="addToCart('Shanghai', 7)">🛒</button>  <!--Button for add to cart-->
+                <button onclick="removeFromCart('Shanghai')">Remove</button> <!--Button for remove to cart-->
+            </div>
+        </div>
+    </div>
+    <!--Aside-->
+    <aside>
+        <!--Cart-->
+        <h2>Your Cart</h2>
+        <ol id="cart-items"></ol>
+        <footer>
+            <p><strong>Total:</strong> ₱<span id="tot">0</span></p>
+        </footer>
+    </aside>
+    </div>
+    <hr>
+    <footer>
+        <p>DEVELOPED BY: BELEN, Mariane I.</p>
+    </footer>
+  </body>
+</html>

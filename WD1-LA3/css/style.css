@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif; /*sets fonts*/
+  margin: 0; /*removes margin and padding*/
+  padding: 0;
+  background-image: url("../img/background.jpg"); /*sets image as background*/
+  background-size: cover; /*makes the image cover the entire screen*/
+  background-position: center;
+  background-repeat: no-repeat; /*prevents repitition of image*/ 
+  color: white;
+}
+
+header {
+  background-image: url("../img/backgroundh.png"); /*adds backgroud image for the header*/
+  color: black; /*text color*/
+  padding: 10px; /*spaces in the header*/
+  text-align: right; /*aligns the text to the right*/
+  height: 40px;
+  position: sticky; /*makes hrader sticky at the top*/
+  top: 0; 
+}
+
+.heroo {
+  background-image: url("../img/etu-nalang.jpg"); /*background image*/
+  color: black; /*text color*/
+  font-size: larger; /*font size*/
+  text-align: center; /*aligns text at the center*/
+  padding: 30px 10px; /*adds spaces inside*/
+  margin: 20px 0; /*adds spaces in top & bottom*/
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  margin-top: 10px; /*adds space in the top of navigation*/
+}
+
+nav a {
+  margin: 30px; /*spaces in between*/
+  color: black;
+  text-decoration: none; /*removes underline*/
+  font-weight: bold; /*make the links bold*/
+}
+
+nav a:hover {
+  text-decoration: underline; /*underline links on hover*/
+  color: blueviolet; /*change color*/
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px; /*space at the bottom of heading*/
+}
+
+.main {
+  display: flex; /*use of flexbox*/
+  padding: 20px; /*padding around*/
+  gap: 20px; /*space between elements*/
+}
+
+.products {
+  width: 80%; /*takes 80% of the space*/
+  color: black;
+  margin: 0 auto; /*centers in horizontal*/
+}
+
+.row1 {
+  display: flex; /*display the drinks in a flex row*/
+  flex-wrap: wrap; /*allow them to wrap in the next line*/
+  justify-content: center; /*center the cards*/
+  gap: 20px;
+  margin-bottom: 20px; /*adds space below the row*/
+  text-align: center;
+}
+
+.row2 {
+  display: grid; /*display the snacks in a grid layout*/
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /*responsive column sizing*/
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center;
+  align-items: start;
+  text-align: center;
+}
+
+h3 {
+  width: 100%; /*takes full width*/
+  text-align: center;
+  background-image: url("../img/asideb.jpg"); /*put image background*/
+  color: black;
+  margin: 10px;
+  display: inline-block; /*allows styling*/
+}
+.card {
+  background-image: url("../img/asideb.jpg"); /*image background for cards*/
+  padding: 15px;
+  border-radius: 10px;
+  width: 180px;
+}
+
+.card:hover {
+  background-color: blueviolet;
+}
+
+.card img {
+  width: 100%; /*makes image fill the cards*/
+  height: 150px; /*sets the height*/
+  object-fit: cover; /*makes the images fit*/
+  border-radius: 10px;
+}
+
+button {
+  background-color: orangered; /*button color*/
+  color: black;
+  padding: 6px;
+  margin: 4px;
+  border-radius: 5px;
+  cursor: pointer; /*show pointer on hover*/
+}
+
+.button:hover {
+  background-color: blueviolet;
+}
+
+.main {
+  display: flex; /*flrx layout*/
+  justify-content: space-between; 
+  height:100%;
+}
+
+aside {
+  flex: 1; /*flex proportionally*/
+  background: linear-gradient(to bottom, #ffea85, #ffd24c); /*gradient*/
+  background-size: cover;
+  display: flex; /*flexbox*/
+  flex-direction: column; /*stacks item*/
+  justify-content: space-between;
+  width: 25%;
+  position: sticky;
+  height: 100vh; /*full viewpoint*/
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  top: 60px;
+}
+
+#cart-items li {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+footer {
+  background-image: url("../img/backgroundh.png"); /*background image*/
+  background-size: cover;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  color: black;
+}
