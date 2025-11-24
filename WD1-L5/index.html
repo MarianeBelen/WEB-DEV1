@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--links bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--links bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <title>Carousel</title>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!--Brand Name-->
+        <a class="navbar-brand" href="#">Patofito</a>
+        <!--Humberger Menu-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarburger"
+          aria-controls="navbarburger"
+          aria-expanded="false"
+          aria-label="Burger Nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Collapsible Navigation links-->
+        <div class="collapse navbar-collapse" id="navbarburger">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <b>HOME</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <b>DANCES</b>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <b>ABOUT</b>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Body carousel-->
+    <div id="carouselCaption" class="carousel slide">
+      <div class="carousel-inner">
+        <!--carousel item to onr image and caption-->
+        <div class="carousel-item active">
+          <img src="img/palawan.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Palawan</h5>
+            <p>The largest island in the Philippine province of Palawan is called Palawan <br>
+                Island.  It is a long island, the fifth largest in the Philippines, that runs <br>
+                from northeast to southwest, with the Sulu Sea to the southeast and the South China <br>
+                Sea to the northwest.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/boracay2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Boracay</h5>
+            <p>The Philippines is home to the tropical paradise that is Boracay Island.  <br>
+                This vacation spot is a veritable piece of heaven on earth, with its white <br>
+                sand beaches and pristine waters.  However, Boracay is more complex than it first appears.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/Hundred-Islands-Pangasinan-Day-Tour-from-Manila.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Hundred Islands</h5>
+            <p>A Hundred Islands Tour is the ideal way to experience the park; on this tour, guests can hop from <br>
+                island to island, swim in turquoise waters, snorkel among vibrant marine life, and enjoy breath-taking <br>
+                views from island viewpoints.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Prev and Next buttons-->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselCaption"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselCaption"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Body description-->
+    <div class="row align-items-center text-center">
+      <!--Short Description-->
+        <div class="col-6 text-center py-5"></div>
+        <div>
+          <h1>Welcome to the Philippines</h1>
+          <h2>It is more FUN in the Philippines!</h2>
+        </div>
+
+        <div>
+          <h5>
+            Welcome to the Philippines, a beautiful land of vibrant culture,
+            warm smiles, and breathtaking scenery. Enjoy stunning beaches, rich
+            history, and delicoius dishes.
+          </h5>
+        </div>
+        <!--Image-->
+        <div class="col-6">
+          <img src="img/flag.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+
+
+    <!--Body cards-->
+    <div class="row px-5 py-5 bg-light justify-content-center">
+      <!--3 cards with types of flower and button-->
+      <div class="card mx-2" style="width: 18rem">
+        <img src="img/lilyofthevalley.jpg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Bulaklak</h5>
+          <p class="card-text">Lily of the Valley</p>
+          <a href="#" class="btn btn-success">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card mx-2" style="width: 18rem">
+        <img src="img/orchid.jpg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h5 card-title>Bulaklak</h5>
+          <p class="card-text">White Orchid</p>
+          <a href="#" class="btn btn-success">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card mx-2" style="width: 18rem">
+        <img src="img/carnations.jpg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h5 card-title>Bulaklak</h5>
+          <p class="card-text">Purple Carnations</p>
+          <a href="#" class="btn btn-success">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="py-2 bg-dark text-light text-center">
+      <p>Develeloped by: BELEN, Mariane I.</p>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
